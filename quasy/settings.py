@@ -25,7 +25,7 @@ SECRET_KEY = '%$dx5lxp8nk7=_ordv^f0*w^owj-6s*0x9-yvqaalrnq%9hdzv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['quasy.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    
+    'social_django',
 ]
 
 MIDDLEWARE = [
@@ -134,4 +134,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
+    'social_core.backends.facebook.FacebookOAuth2',
+
 ]
+
+SOCIAL_AUTH_FACEBOOK_KEY = '1522694537891658'
+SOCIAL_AUTH_FACEBOOK_SECRET = '52ec115a5025eadc4e589c8115e168a0'
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
