@@ -25,7 +25,7 @@ SECRET_KEY = '%$dx5lxp8nk7=_ordv^f0*w^owj-6s*0x9-yvqaalrnq%9hdzv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['quasy.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['quasy.com', 'localhost', '127.0.0.1', 'b2c08473.ngrok.io']
 
 
 # Application definition
